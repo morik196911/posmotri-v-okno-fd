@@ -51,6 +51,7 @@ ol {
   /*my code*/
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 133px;
 }
 
@@ -60,16 +61,14 @@ ol {
   column-gap: 30px;
   grid-template-areas: "g-result  g-details";
   width: 1140px;
-  height: 534px;
 }
 
 .result {
   grid-area: g-result;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 711px;
-  height: 456px;
   padding-top: 78px;
 }
 
@@ -108,8 +107,10 @@ ol {
 .search-form__textfield {
   width: 225px;
   height: 27px;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  color: rgba(255, 255, 255, 1);
   line-height: 21.6px;
   background-color: transparent;
   border: none;
@@ -129,10 +130,6 @@ ol {
 .search-form__textfield:active {
   border-right-color: rgba(255, 255, 255, 1);
   border-left-color: rgba(255, 255, 255, 1);
-}
-
-.search-form__textfield:hover {
-  cursor: pointer;
 }
 
 .search-form__textfield:focus {
@@ -168,7 +165,7 @@ ol {
   background-color: #fff;
 }
 
-.search-form__label:hover {
+.search-form__label-text:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -186,6 +183,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .search-form__label-text {
@@ -217,6 +215,7 @@ ol {
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
 }
 
 .search-form__submit-button:active,
@@ -247,11 +246,11 @@ ol {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -276,7 +275,6 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  margin-bottom: 30px;
 }
 
 .content__list-item {
@@ -309,7 +307,6 @@ ol {
   cursor: pointer;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: rgba(255, 255, 255, 1);
 }
@@ -332,7 +329,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -344,7 +341,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
