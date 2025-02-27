@@ -52,7 +52,6 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 133px;
 }
 
 .content {
@@ -144,7 +143,6 @@ ol {
 /*checkbox*/
 .search-form__checkbox-list {
   width: 212px;
-  height: 22px;
   display: flex;
   justify-content: space-between;
 }
@@ -165,7 +163,7 @@ ol {
   background-color: #fff;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover:has(.search-form__checkbox) {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -256,7 +254,7 @@ ol {
   line-height: 70.5px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
 }
 
 .content__accent {
@@ -275,10 +273,11 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
+  padding-top: 3px;
 }
 
 .content__list-item {
-  padding: 3px;
+  padding: 0 3px;
 }
 
 .content__video-card {
